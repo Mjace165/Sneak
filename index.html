@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Product Page</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">sneakers</div>
+        <div class="hamburger" id="hamburger">☰</div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-cart">
+            <div class="cart-container">
+                <span id="cart-icon">🛒</span>
+                <span id="cart-count" class="badge">0</span>
+                <div class="cart-dropdown" id="cart-dropdown">
+                    <h4>Cart</h4>
+                    <div id="cart-items"></div>
+                    <button id="checkout-btn" class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+            <!-- <span class="theme-toggle" id="theme-toggle">🌙</span> -->
+            <img src="ChatGPT Image Apr 8, 2025, 10_21_35 AM.png" alt="user" class="avatar">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="product-images">
+            <img id="main-img" src="img-shoe 1.png" alt="Sneaker"
+                class="main-image">
+            <div class="thumbnails">
+                <img src="shoe 2.avif" alt="Sneaker" class="thumb active">
+                <img src="shoe 3.jpg" alt="Sneaker" class="thumb">
+                <img src="shoe 4.png" alt="Sneaker" class="thumb">
+                <img src="https://via.placeholder.com/500x400.png?text=Sneaker+4" alt="Sneaker" class="thumb">
+            </div>
+        </div>
+        <div class="product-info">
+            <h4 class="company">SNEAKER COMPANY</h4>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div class="price"><span class="current-price">$125.00</span><span class="discount">50%</span></div>
+            <div class="old-price">$250.00</div>
+            <div class="cart-actions">
+                <div class="quantity">
+                    <button id="minus">-</button><span id="count">0</span><button id="plus">+</button>
+                </div>
+                <button id="add-to-cart" class="add-to-cart">🛒 Add to cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="close-lightbox">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
